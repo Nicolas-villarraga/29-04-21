@@ -23,7 +23,7 @@ class EmployeeController extends Controller
     {
         # code...
         $employees = Employee::create($request->all());
-        return redirect('employees')->whith('status-1','se a creado correctamente');
+        return redirect('employees')->with('status-1','se a creado correctamente');
     }
     public function show($id)
     {
@@ -35,7 +35,7 @@ class EmployeeController extends Controller
     {
         # code...
         $employees = Employee::find($id)->delete();
-        return redirect('employees')->whith('status-2','se a eliminado correctamente');
+        return redirect('employees')->with('status-2','se a eliminado correctamente');
     }
 
     public function edit($id)

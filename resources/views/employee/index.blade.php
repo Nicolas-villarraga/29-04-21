@@ -14,7 +14,7 @@
         <row>
             <div class="col-mg-12">
             <br>
-            <a href="{{url('companies/create')}}" class="btn btn-primary ">Crear Nuevo Empleado</a>
+            <a href="{{url('employees/create')}}" class="btn btn-primary ">Crear Nuevo Empleado</a>
             @if(session('status-1'))
                 <div class="alert alert-success" type="create">
                 {{session('status-1')}}
